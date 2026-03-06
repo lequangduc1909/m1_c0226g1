@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <form action="https://james.codegym.vn" method="post">
+      <h2>Market Research Survey</h2>
+      <p>Please take a few moments to complete this satisfacation survey.</p>
+      <br />
+      <label for="age"><b>What is your age range?</b></label> <br />
+      <select name="agerange" id="age">
+        <option value="18to24">18-24</option>
+        <option value="25to35">25-35</option>
+        <option value="36to45">36-45</option>
+        <option value="45upper">45 +</option>
+      </select>
+      <br /><br />
+
+      <label for="ic"><b>What is your yearlt range?</b></label> <br />
+      <select name="income" id="ic">
+        <option value="0$to25000$">$0 - $25000</option>
+        <option value="25000$to50000$">$25000 - $50000</option>
+        <option value="50000$to100000$">$50000 - $100000</option>
+        <option value="100000$upper">$100000 +</option>
+      </select>
+      <br /><br />
+
+      <fieldset style="width: 120px">
+        <legend><b>Gender</b></legend>
+        <input type="radio" name="gender" id="male" checked />
+        <label for="male">Male</label><br />
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label> <br /><br />
+      </fieldset>
+      <br />
+
+      <fieldset style="width: 440px">
+        <legend>
+          <b
+            >Which of the following products have your purchased in the last 2
+            months. Please check all that apply.</b
+          >
+        </legend>
+        <input type="checkbox" name="product[]" id="pr1" />
+        <label for="pr1">Product 1</label> <br />
+        <input type="checkbox" name="product[]" id="pr2" />
+        <label for="pr2">Product 2</label> <br />
+        <input type="checkbox" name="product[]" id="pr3" />
+        <label for="pr3">Product 3</label>
+      </fieldset>
+
+      <label for="dl"><b>What would you pay for the new product?</b></label>
+      <br />
+      <span><b>$</b></span>
+      <input type="number" name="dollar" id="dl" style="width: 150px" min="0" />
+      <span>.</span>
+      <input type="number" name="cent" id="cnt" style="width: 65px" min="0" />
+      <br /><br />
+      <label for="ft"
+        ><b>What features would you like to see the new product?</b></label
+      >
+      <br />
+      <textarea name="features" id="ft" placeholder="Viết vào đây"></textarea>
+      <br /><br />
+
+      <label for="please"
+        ><b
+          >Please rate your level of agreement with the following statements.</b
+        ></label
+      >
+      <table id="please" border="1">
+        <tr>
+          <th style="width: 7cm"></th>
+          <th style="width: 3.5cm">Strongly Disagree</th>
+          <th style="width: 3.5cm">Disagree</th>
+          <th style="width: 3.5cm">Agree</th>
+          <th style="width: 3.5cm">Strongly Agree</th>
+        </tr>
+
+        <tr>
+          <th>Our products are priced fairly</th>
+          <td><input type="radio" name="fairly" id="fl1" value="1" /></td>
+          <td><input type="radio" name="fairly" id="fl2" value="2" /></td>
+          <td><input type="radio" name="fairly" id="fl3" value="3" /></td>
+          <td>
+            <input type="radio" name="fairly" id="fl4" value="4" checked />
+          </td>
+        </tr>
+        <tr>
+          <th>Our products are high quality</th>
+          <td><input type="radio" name="quality" id="ql1" value="1" /></td>
+          <td><input type="radio" name="quality" id="ql2" value="2" /></td>
+          <td><input type="radio" name="quality" id="ql3" value="3" /></td>
+          <td>
+            <input type="radio" name="quality" id="ql4" value="4" checked />
+          </td>
+        </tr>
+        <tr>
+          <th>You would recommend our products to friend or coworker.</th>
+          <td><input type="radio" name="recommend" id="rcm1" value="1" /></td>
+          <td><input type="radio" name="recommend" id="rcm2" value="2" /></td>
+          <td><input type="radio" name="recommend" id="rcm3" value="3" /></td>
+          <td>
+            <input type="radio" name="recommend" id="rcm4" value="4" checked />
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <button type="submit" id="sm"><b>Submit</b></button>
+    </form>
+  </body>
+</html>
