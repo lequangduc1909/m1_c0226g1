@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calendar-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+  color: #000080;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #666;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+  text-align: right;
+}
+
+thead th {
+  color: white;
+  text-align: center;
+}
+
+.sunday-header {
+  background-color: #d9534f;
+}
+
+.weekday-header {
+  background-color: #f0ad4e;
+}
+
+.saturday-header {
+  background-color: #428bca;
+}
+
+thead tr:nth-child(2) th {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+tbody td {
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+tbody td sub {
+  font-size: 12px;
+  font-weight: normal;
+  color: #888;
+}
+
+.sunday {
+  color: #d9534f;
+}
+
+.saturday {
+  color: #428bca;
+}

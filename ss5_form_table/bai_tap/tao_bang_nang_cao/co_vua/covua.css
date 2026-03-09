@@ -1,0 +1,41 @@
+/* Tổng thể bàn cờ */
+table {
+  border-collapse: collapse;
+  background-color: #ffb000;
+  border: 15px solid #ffb000;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+}
+
+th {
+  width: 30px;
+  height: 30px;
+  background-color: #ffb000;
+  color: black;
+  font-weight: bold;
+}
+
+td {
+  background-color: white;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+  background-color: black;
+}
+
+tr:nth-child(odd):not(:first-child) td:nth-child(odd) {
+  background-color: black;
+}
+
+table,
+td,
+th {
+  border: none;
+}
