@@ -1,0 +1,80 @@
+/* 1. Cấu trúc tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    width: 850px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+/* 2. Tiêu đề và Thông tin chung */
+h1 {
+    color: #0033CC;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    color: #3366FF;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.info-right {
+    text-align: right;
+}
+
+/* 3. Định dạng bảng */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Để các đường kẻ nhập làm 1 */
+    margin-top: 10px;
+}
+
+/* Kẻ bảng cho tất cả các ô */
+table th, table td {
+    border: 1px solid #999;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+/* 4. Màu sắc theo Class của cậu */
+.bg-yellow {
+    background-color: #FFFF00;
+}
+
+.bg-orange {
+    background-color: #FFA500;
+}
+
+/* Độ rộng các cột đặc biệt */
+.col-week {
+    width: 60px;
+}
+
+.col-date {
+    width: 110px;
+}
+
+/* 5. Một chút tinh chỉnh cho đẹp hơn */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+strong {
+    color: #000;
+}
